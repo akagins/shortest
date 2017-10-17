@@ -1,0 +1,28 @@
+{{ define "title" }}
+shortest - サインアップ
+{{ end }}
+{{ define "content" }}
+<div class="col-md-offset-4 col-md-12">
+    <form id="form-signup" class="form-signup" method="POST" action="/signup/regist">
+        <div class="alert alert-danger"></div>
+        <div class="input-text">
+            <input type="text" name="accountid" class="form-control" placeholder="ログインID" required autofocus>
+        </div>
+        <div class="input-text">
+            <input type="email" name="email" class="form-control" placeholder="Eメールアドレス" required>
+        </div>
+        <div class="input-text">
+            <input type="password" name="password" class="form-control" placeholder="パスワード" required>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="agree"> ＊利用規約に同意する
+            </label>
+        </div>
+        <input type="button" id="btn-signup" class="btn btn-lg btn-primary btn-block" value="登録">
+    </form>
+</div>
+{{ end }}
+{{ define "script" }}
+<script src="/assets/js/signup.js"></script>
+{{ end }} 

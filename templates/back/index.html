@@ -1,0 +1,40 @@
+{{ define "title" }}
+Shortest - 小テスト作成サービス
+{{ end }} 
+{{ define "content" }}
+<div class="landingHeader row">
+
+    <div class="col-md-7 col-xs-12">
+        <h2>Shortest</h2>
+        <div class="landingHeaderCatchCopy">
+            <div class="landingHeaderCatchCopyText">
+                Shortestは、小テストを作成して配布するサービスです。
+            </div>
+            <div class="landingHeaderCatchCopyMore">
+                <a href="/about">もっと詳しく</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-offset-1 col-md-5 col-xs-12">
+        <form id="form-signin" class="form-signin" method="POST" action="/signin">
+            <div class="alert alert-danger"></div>
+            <div class="input-text">
+                <input type="text" name="accountid" class="form-control" placeholder="アカウントID または Eメールアドレス" required autofocus>
+            </div>
+            <div class="input-text">
+                <input type="password" name="password" class="form-control" placeholder="パスワード" required>
+            </div>
+            <input id="btn-signin" class="btn btn-lg btn-primary btn-block" type="button" value="ログイン">
+        </form>
+        <div>
+            <a href="/signup">新規登録はこちら</a>
+        </div>
+    </div>
+
+</div>
+
+{{ end }}
+{{ define "script" }}
+<script src="/assets/js/signin.js"></script>
+{{ end }} 

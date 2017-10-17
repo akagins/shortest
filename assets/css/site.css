@@ -1,0 +1,32 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.landingHeader {
+    padding-top: 80px;
+}
+
+.landingHeaderCatchCopy {
+    margin: 80px 0;
+}
+
+.landingHeaderCatchCopyText {
+    margin: 0 0 10px;
+    line-height: 1.4;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.alert.alert-danger {
+    display: none;
+}
+
+.input-text {
+    margin: 10px 0;
+}
